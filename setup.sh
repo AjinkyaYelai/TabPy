@@ -41,11 +41,11 @@ if [ -z `which conda` ] ; then
     conda_download=""
     if [[ $OSTYPE == linux* ]]; then
             echo "Linux detected"
-            conda_download="repo.continuum.io/archive/Anaconda-2.3.0-Linux-x86_64.sh"
+            conda_download="repo.continuum.io/archive/Anaconda3-4.3.1-Linux-x86_64.sh"
             conda_ext=".sh"
     elif [[ $OSTYPE == darwin* ]]; then
             echo "Mac detected"
-            conda_download="repo.continuum.io/archive/Anaconda-2.3.0-MacOSX-x86_64.sh"
+            conda_download="epo.continuum.io/archive/Anaconda3-4.3.1-MacOSX-x86_64.sh"
             conda_ext=".sh"
     else
             echo "Unsupported Operating System"

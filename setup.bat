@@ -35,8 +35,8 @@ IF EXIST "%~dp0\Anaconda-Installer.exe" (
 @ECHO ~~~~~~~~~~~~~~~~~~~~  Downloading and installing Anaconda  ~~~~~~~~~~~~~~~~~~~~
 @ECHO                           This may take a few minutes
 @ECHO.
-@IF %OS%==64BIT powershell -Command "Import-Module BitsTransfer; Start-BitsTransfer https://repo.continuum.io/archive/Anaconda-2.3.0-Windows-x86_64.exe $PWD\Anaconda-Installer.exe"
-@IF %OS%==32BIT powershell -Command "Import-Module BitsTransfer; Start-BitsTransfer https://repo.continuum.io/archive/Anaconda-2.3.0-Windows-x86.exe $PWD\Anaconda-Installer.exe"
+@IF %OS%==64BIT powershell -Command "Import-Module BitsTransfer; Start-BitsTransfer https://repo.continuum.io/archive/Anaconda3-4.3.1-Windows-x86_64.exe $PWD\Anaconda-Installer.exe"
+@IF %OS%==32BIT powershell -Command "Import-Module BitsTransfer; Start-BitsTransfer https://repo.continuum.io/archive/Anaconda3-4.3.1-Windows-x86.exe $PWD\Anaconda-Installer.exe"
 @ECHO Download completed.
 )
 @ECHO Installing Anaconda...
